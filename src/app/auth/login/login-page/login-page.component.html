@@ -1,0 +1,37 @@
+
+<mat-card  class="logged" *ngIf="local > 0"><h1>{{use}} LOGGATO EFFETTUA IL LOGOUT PRIMA DI  RIENTRARE...</h1></mat-card>
+
+
+
+
+<mat-card *ngIf="local === 0" class="css">
+<div class="box-container">
+
+  <h1 class="m-5 text-center" style="font-weight:bold ;">LOGIN</h1>
+
+  <form #f="ngForm" (ngSubmit)="invia()">
+    <div class="mb-3 ">
+      <label for="email" class="form-label mail">Email</label>
+      <input type="email" ngModel name="email" class="form-control" id="email">
+    </div>
+    <div class="mb-3 ">
+      <label  for="password" class="form-label">Password</label>
+      <input  matInput [type]="hide ? 'password' : 'text'" type="password"  ngModel name="password" class="form-control " id="password"><button type="button" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+    </div>
+    <div  class="mb-3 mt-5">
+      <button  mat-button type="submit" class="btn btn-primary w-100">Submit</button>
+
+    </div>
+  </form>
+  <div class="alert " role="alert" *ngIf="error">
+    {{error}}
+  </div>
+
+</div>
+</mat-card>
+
+
+<!-- ------------------------------------------- -->
+

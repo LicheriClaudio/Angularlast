@@ -1,0 +1,23 @@
+
+  <mat-card class="css">Simple card
+    <div>
+  <h1>lista</h1>
+<ul *ngFor="let users of users" >
+
+  <li> {{users | json}}
+</li>
+</ul>
+{{error}}
+</div>
+</mat-card>
+
+
+
+
+<!-- {{users | json}} -->
+
+
+
+  <!-- <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr> -->
+

@@ -1,0 +1,72 @@
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+
+.ciao {
+  margin-top: 2rem;
+  width: 10rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  background-color: blue;
+  color:white;
+  text-decoration:  none;
+}
+.ciao:active{
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+.ciao1 {
+  color: black;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 5rem !important;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ciao1:active {
+  color:black;
+}
+
+.ciao3 {
+  background-color: red !important;
+   margin-top: 2rem;
+  width: 10rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+
+  color:white;
+  text-decoration:  none;
+}

@@ -1,0 +1,58 @@
+<!-- <div>
+<ul>
+
+  <li  ><a [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a></li>
+  <li><a [routerLink]="['/About']"> About</a></li>
+  <li><a [routerLink]="['/registerPage']"> Register</a></li>
+  <li><a [routerLink]="['/loginPage']">Login</a></li>
+
+</ul>
+</div> -->
+<!-- <div>
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item><a [routerLink]="['/About']"> About</a></button>
+  <button mat-menu-item><a [routerLink]="['/loginPage']">Login</a></button>
+  <button mat-menu-item><a [routerLink]="['/registerPage']"> Register</a></button>
+  <button mat-menu-item><a [routerLink]="['/home']">Home</a></button>
+</mat-menu>
+</div> -->
+
+
+ <div class="ciao1"><a class="ciao1" [routerLink]="['/home']" routerLinkActive="router-link-active">{{myname}}</a></div>
+
+<div class="container">
+
+<button class="ciao"   mat-raised-button color="warn"><a  class="ciao" [routerLink]="['/About']"> About</a></button>
+
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+
+</mat-menu>
+
+
+<button  class="ciao" mat-button ><a  class="ciao" [routerLink]="['/loginPage']">Login</a></button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+
+</mat-menu>
+
+<button  class="ciao" mat-button ><a  class="ciao" [routerLink]="['/registerPage']"> Register</a></button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+
+</mat-menu>
+
+
+<button  class="ciao" mat-button ><a  class="ciao" [routerLink]="['/home']">Home</a></button>
+<mat-menu  class="ciao" #afterMenu="matMenu" xPosition="after">
+
+</mat-menu>
+
+
+<button  class="ciao3" mat-button (click)="logout()" >Logout</button>
+<mat-menu  class="ciao" #afterMenu="matMenu" xPosition="after">
+
+</mat-menu>
+
+
+
+
+</div>

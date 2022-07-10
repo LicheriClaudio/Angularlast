@@ -29,7 +29,7 @@ const routes: Routes = [
     pathMatch: 'full',
     redirectTo: 'home',
   },
-  { path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UsersModule) },
+
   {
     path: '**',
     loadChildren: () =>

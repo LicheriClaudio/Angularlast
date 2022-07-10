@@ -16,7 +16,7 @@ local = localStorage.length
     this.Serviceservice.authSubject.subscribe(val => {
       if(val !== null) {
         this.myname = ''
-        this.myname = `Ciao ${val?.user.firstname} ${val?.user.lastname}, benvenuto su Project` ;
+        this.myname = `Hey ${val?.user.firstname} ${val?.user.lastname}, Have a look` ;
       } else {
         this.myname = 'Project';
       };
@@ -37,4 +37,5 @@ local = localStorage.length
 
 
   }
+
 }

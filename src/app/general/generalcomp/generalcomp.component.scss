@@ -32,7 +32,7 @@ section {
 
 
 .ciao {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   width: 10rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -48,10 +48,11 @@ section {
   text-align: center;
 }
 .ciao1 {
+
   color: rgb(253, 252, 252);
   text-align: center;
   font-size: 2.5rem;
-  margin-top: 5rem !important;
+ /*  margin-top: 5rem !important; */
   text-decoration: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -62,7 +63,7 @@ section {
 
 .ciao3 {
   background-color: rgba(187, 6, 6, 0.676) !important;
-   margin-top: 2rem;
+   /* margin-top: 2rem; */
   width: 10rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -70,3 +71,16 @@ section {
   color:white;
   text-decoration:  none;
 }
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-evenly;
+
+  position: fixed;
+  top: 0rem;
+  background-color: rgba(1, 108, 202, 0.566);
+  align-items: center;
+
+}
+
+

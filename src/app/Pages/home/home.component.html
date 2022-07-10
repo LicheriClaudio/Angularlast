@@ -5,7 +5,7 @@
 <ul *ngFor="let users of utente" >
   <li *ngIf="utente.length === 0">Non ci sono <span>UTENTI</span></li>
   <li> {{users.firstname}}--{{users.lastname}}<br>{{users.email}}<button *ngIf="utente.length > 1" class="ciao3" mat-button (click)="remove(users)" ><mat-icon class="icon">delete_sweep</mat-icon></button></li>
-<li *ngIf="utente.length === 1">Non ci sono altri <span>oltre a TE...</span></li>
+<li *ngIf="utente.length === 1">Non ci sono altri <span>UTENTI..</span></li>
 </ul>
 {{error}}
 </div>

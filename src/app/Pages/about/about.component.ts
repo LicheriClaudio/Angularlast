@@ -26,6 +26,11 @@ export class AboutComponent implements OnInit {
       this.utente = `${val?.user.firstname} -- ${val?.user.lastname}`;
     });
   }
+
+ /*  removeUser(){
+    this.Serviceservice.removeuser()
+
+  } */
   toggleBadgeVisibility() {
     this.hidden = !this.hidden;
   }

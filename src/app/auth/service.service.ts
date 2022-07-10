@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, JsonpClientBackend } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
@@ -18,11 +18,11 @@ export class ServiceService {
   users: Iauth[] = [];
   utenti: Userdati[] = [];
   error = undefined;
+  delet: JsonpClientBackend[] = [];
+
   constructor(private http: HttpClient, private router: Router) {
     this.restoreUserLogin();
   }
-
-
 
   getAllUsers() {
     console.log('Chiamata Ajax al server');
@@ -45,6 +45,21 @@ export class ServiceService {
         );
     });
   }
+
+
+  //CHIEDERE AL PROF
+  /* removeuser() {
+    this.authSubject.subscribe((val) => {
+      this.http.delete<Iauth[]>(
+        this.urlJsonServer +'/profile/'+ val?.user.id
+      ),
+
+        console.log(val?.user.id)
+
+
+      console.log(this.urlJsonServer+'/post/'+val?.user.id);
+    });
+  } */
 
   restoreUserLogin() {
     const json = localStorage.getItem('isAuthenticated');

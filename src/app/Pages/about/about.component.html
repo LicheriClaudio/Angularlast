@@ -1,5 +1,5 @@
 
-<mat-card class="css">MyProfile
+<!-- <mat-card class="css">MyProfile
     <div>
 
 <ul>
@@ -9,4 +9,27 @@
 </ul>
 {{error}}
 </div>
+</mat-card> -->
+<!-- <div class="example-box" cdkDrag [cdkDragStartDelay]="1"> -->
+
+<mat-card class="example-card css"><h1>PROFILO</h1>
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{utente}}</mat-card-title>
+    <mat-card-subtitle class="color">{{use}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image class="img" src="https://tse1.mm.bing.net/th?id=OIP.4nBQp_5QaE9he0SSaUIqIwHaHa&pid=Api&P=0&w=181&h=181" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quos autem dicta accusamus ex error debitis nulla ut mollitia. Error accusamus amet assumenda odio quas numquam dolorum doloribus ea distinctio?Lorem ipsum dnis!
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button matBadge="867" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()"><mat-icon>thumb_up_alt</mat-icon></button>
+    <button mat-raised-button matBadge="748" [matBadgeHidden]="hidden2" (click)="toggleBadgeVisibility2()"><mat-icon> mobile_screen_share</mat-icon></button>
+  </mat-card-actions>
 </mat-card>
+<!-- <button mat-raised-button matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+        Hide
+    </button> -->
+<!--</div>  -->

@@ -1,6 +1,6 @@
 .logged {
-  color: black;
-  background-color: aliceblue;
+  color: rgb(254, 252, 252);
+  background-color: rgba(0, 131, 246, 0.705);
   margin-top: 10rem !important;
   text-align:center;
   width:40rem;
@@ -9,8 +9,8 @@
 }
 
 .css {
-  color: black;
-  background-color: aliceblue;
+  color: rgb(247, 246, 246);
+  background-color: rgba(6, 125, 228, 0.687);
   margin-top: 10rem !important;
   text-align:center;
   width:40rem;
@@ -21,7 +21,7 @@
 .form-control{
   align-items: center;
   background-color: rgb(87, 3, 108);
-  color: black;
+  color: rgb(218, 213, 213);
   border-radius: 5px;
   margin-top: 1.5rem;
   width: auto;
@@ -43,7 +43,7 @@
 .form-label {
   margin-right:1.5rem ;
   font-size: 2.3rem;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 

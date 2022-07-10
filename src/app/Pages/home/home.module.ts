@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -17,6 +18,7 @@ import { MatCardModule } from '@angular/material/card';
     MatSliderModule,
     MatTableModule,
     MatCardModule,
+    MatIconModule,
   ],
 })
 export class HomeModule {}

@@ -5,6 +5,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 import { BehaviorSubject, tap } from 'rxjs';
 import { Iauth } from './interfaces/iauth';
 import { Iregister } from './interfaces/iregister';
+import { Userdati } from './interfaces/userdati';
 
 
 @Injectable({
@@ -15,10 +16,13 @@ export class ServiceService {
   private urlJsonServer = 'http://localhost:3000';
   helper = new JwtHelperService();
   users: Iauth[] = [];
+  utenti: Userdati[] = [];
   error = undefined;
   constructor(private http: HttpClient, private router: Router) {
     this.restoreUserLogin();
   }
+
+
 
   getAllUsers() {
     console.log('Chiamata Ajax al server');
@@ -72,7 +76,7 @@ export class ServiceService {
     console.log('Logout');
     this.authSubject.next(null);
     localStorage.removeItem('isAuthenticated');
-    this.router.navigate(['/loginPage'])
+    this.router.navigate(['/loginPage']);
     location.reload();
   }
 }

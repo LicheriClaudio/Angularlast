@@ -23,19 +23,19 @@
 
 <div class="container">
 
-<button class="ciao"   mat-raised-button color="warn"><a  class="ciao" [routerLink]="['/About']"> About</a></button>
+<button  class="ciao"   mat-raised-button color="warn"><a  class="ciao" [routerLink]="['/About']"> MYPAGE</a></button>
 
 <mat-menu #aboveMenu="matMenu" yPosition="above">
 
 </mat-menu>
 
 
-<button  class="ciao" mat-button ><a  class="ciao" [routerLink]="['/loginPage']">Login</a></button>
+<button  *ngIf="local === 0"  class="ciao" mat-button ><a  class="ciao" [routerLink]="['/loginPage']">Login</a></button>
 <mat-menu #belowMenu="matMenu" yPosition="below">
 
 </mat-menu>
 
-<button  class="ciao" mat-button ><a  class="ciao" [routerLink]="['/registerPage']"> Register</a></button>
+<button *ngIf="local === 0"  class="ciao" mat-button ><a  class="ciao" [routerLink]="['/registerPage']"> Register</a></button>
 <mat-menu #beforeMenu="matMenu" xPosition="before">
 
 </mat-menu>

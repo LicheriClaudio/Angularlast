@@ -1,6 +1,6 @@
 .css {
-  color: black;
-  background-color: aliceblue;
+  color: rgb(254, 254, 254);
+  background-color: rgba(7, 124, 226, 0.665);
   margin-top: 10rem !important;
   text-align:center;
   width:40rem;
@@ -29,7 +29,7 @@
   margin-top: 2rem;
   color: white;
   border-radius: 6px;
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.705);
   width: 8rem;
   height: 2rem;
 }
@@ -37,7 +37,7 @@
 .form-label {
   margin-right:1.5rem ;
   font-size: 2.3rem;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 .mail {

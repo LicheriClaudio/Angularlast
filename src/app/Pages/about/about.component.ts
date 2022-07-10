@@ -9,9 +9,12 @@ import { ServiceService } from 'src/app/auth/service.service';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
+  utente = '';
   use = 'ciao ';
   error = undefined;
   users: Iauth[] = [];
+  hidden = false;
+  hidden2 = false;
   constructor(
     private Serviceservice: ServiceService,
     private http: HttpClient
@@ -19,7 +22,17 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.Serviceservice.authSubject.subscribe((val) => {
-      this.use = `${val?.user.firstname} -- ${val?.user.lastname} -- ${val?.user.email}, `;
+      this.use = ` ${val?.user.email}`;
+      this.utente = `${val?.user.firstname} -- ${val?.user.lastname}`;
     });
   }
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
+  toggleBadgeVisibility2() {
+    this.hidden2 = !this.hidden2;
+  }
 }
+
+
+

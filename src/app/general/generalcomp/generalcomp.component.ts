@@ -9,6 +9,7 @@ import { ServiceService } from 'src/app/auth/service.service';
 })
 export class GeneralcompComponent implements OnInit {
 myname = 'Project ';
+local = localStorage.length
   constructor(private Serviceservice: ServiceService, private router: Router) {}
 
   ngOnInit():void {
@@ -18,20 +19,16 @@ myname = 'Project ';
         this.myname = `Ciao ${val?.user.firstname} ${val?.user.lastname}, benvenuto su Project` ;
       } else {
         this.myname = 'Project';
-      }
+      };
+
+
+
+
+
     })
 
 
-    /* this.Serviceservice.authSubject.subscribe(val => {
-      if(val !== null ) {
 
-        this.myname = `Benvenuto ${val?.user.firstname} ${val?.user.lastname}   ` ;
-      }
-
-
-
-
-    }) */
   }
 
   logout() {

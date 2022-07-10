@@ -42,12 +42,18 @@ export class LoginPageComponent implements OnInit {
       (resp) => {
         console.log(resp);
         this.error = undefined;
+
         this.router.navigate(['home']);
+
+    setInterval(() => location.reload(), 50);
+
+
       },
       (err) => {
         console.log(err.error);
         this.error = err.error;
       }
+
     );
   }
 }

@@ -1,46 +1,18 @@
 {
   "users": [
     {
-      "email": "webyvo@mailinator.com",
-      "password": "$2a$10$qauEbOuF3oIGPmGCxQs9u.sMXFieADpxA/JIYRoKm00skBwCu2dYG",
-      "firstname": "Madaline",
-      "lastname": "Rivera",
-      "id": 1
-    },
-    {
-      "email": "example@example.com",
-      "password": "$2a$10$JCFDNMdHOnmbm5xIngcXneQcsWglaxtMZ1PfUL1Ii91c06ZMBRjuW",
-      "firstname": "ciao",
-      "lastname": "ciao",
+      "email": "claudio.licheri95@gmail.com",
+      "password": "$2a$10$BLmOplQeOQkStDupTzIdoe7.lw3iEn9SPhliH1nf3tjDWoA6uVqNO",
+      "firstname": "Claudio",
+      "lastname": "Licheri",
       "id": 2
     },
     {
-      "email": "claudio.licheri95@gmail.com",
-      "password": "$2a$10$Zex3ew3x3eaKvZzysRqGKuaxkYPOJIiXzFufcPop4whnWty1iMm9G",
-      "firstname": "Claudio",
-      "lastname": "Licheri",
+      "email": "dadinaciq@mailinator.com",
+      "password": "$2a$10$08O9qLXdFmAQoi6KOIHi4ORTx/U07MCxl6HW/fBsLfwu.270uQAP6",
+      "firstname": "Eagan",
+      "lastname": "Pate",
       "id": 3
-    },
-    {
-      "email": "salve@gmail.com",
-      "password": "$2a$10$Zh2vqEEqZxgRyYOlOUX9UuXteYX3VV3YXmXIqBIh1eQDdZETAKGAC",
-      "firstname": "salve",
-      "lastname": "salve",
-      "id": 4
-    },
-    {
-      "email": "dio@gmail.com",
-      "password": "$2a$10$R6xN/DdVzdmwaJxPqoltG.Rzlyrl0ZMeXI6fBM.aQE10MrEBKDObG",
-      "firstname": "dio",
-      "lastname": "dio",
-      "id": 5
-    },
-    {
-      "email": "chicco@gmail.com",
-      "password": "$2a$10$zWYHp/Vjn.oiHxmQPlC8VO8JndsomNQTELrCnKyeDOPl/lDanru7C",
-      "firstname": "ciao",
-      "lastname": "chicco",
-      "id": 6
     }
   ]
 }

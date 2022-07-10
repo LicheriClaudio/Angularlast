@@ -1,9 +1,9 @@
-.css {
+/* .css {
   color: black;
   background-color: aliceblue;
   margin-top: 10rem !important;
   text-align:center;
-  width:40rem;
+  width:auto;
   height: auto;
   margin: 0 auto;
   align-items: center;
@@ -11,4 +11,37 @@
   justify-content: center;
   text-decoration: none;
 
+} */
+
+.example-card {
+   margin-top: 2rem !important;
+  color: rgb(255, 255, 255);
+  max-width:400px;
+  background-color: rgba(15, 94, 164, 0.719);
+  margin: 0 auto;
+  height: auto;
+}
+
+.example-header-image {
+  background-image: url('https://tse4.mm.bing.net/th?id=OIP.XQXefUviWIZ9HjWL0YhDwwHaER&pid=Api&P=0&w=302&h=175');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+
+
+}
+.color {
+  color: rgb(255, 253, 253);
+}
+
+.img{
+  opacity: 0.8;
+}
+
+button {
+
+  margin-left:8rem;
+  border-radius: 20px;
+  background-color: rgba(12, 87, 209, 0.704);
+  color: white;
 }

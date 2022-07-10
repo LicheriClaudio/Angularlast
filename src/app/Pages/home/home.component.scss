@@ -10,12 +10,29 @@
   margin-left: 8px;
 }
 .css{
-   color: black;
-  background-color: aliceblue;
-  margin-top: 10rem !important;
+   color: rgb(255, 255, 255);
+  background-color: rgba(0, 124, 232, 0.555);
+  margin-top: 6rem !important;
   text-align:center;
-  width:40rem;
+  width:30rem;
   height: auto;
   margin: 0 auto;
+  /* background-image: "https://steamcommunity.com/sharedfiles/filedetails/?id=2447928310"; */
 
+}
+span{
+  color: red;
+}
+
+.ciao3 {
+  margin-left: 1.2rem;
+  width: auto;
+  height: auto;
+  background-color: rgba(228, 4, 4, 0.67);
+  color: white;
+}
+
+li {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
